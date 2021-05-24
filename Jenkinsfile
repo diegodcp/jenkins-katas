@@ -17,7 +17,7 @@ pipeline {
 
           }
           steps {
-            sh 'ci/build-app.sh'
+            sh 'gradle:6.8.3-jdk11'
           }
         }
 
