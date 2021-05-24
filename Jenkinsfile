@@ -12,12 +12,12 @@ pipeline {
         stage('build app') {
           agent {
             docker {
-              image 'gradle:jdk11'
+              image 'gradle:6.8.3-jdk11'
             }
 
           }
           steps {
-            sh 'gradle:6.8.3-jdk11'
+            sh 'ci/build-app.sh'
           }
         }
 
